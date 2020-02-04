@@ -56,7 +56,7 @@
         let filtered = this.posts;
 
         if (this.name) {
-          filtered = this.posts.filter((i) => {
+          filtered = filtered.filter((i) => {
             if (this.users[i.userId].name.includes(this.name) || i.title.includes(this.name)) {
               return true
             }
@@ -64,7 +64,7 @@
         }
 
         if (this.text) {
-          filtered = this.posts.filter((i) => {
+          filtered = filtered.filter((i) => {
             if (i.body.includes(this.text)) {
               return true
             }
