@@ -109,9 +109,6 @@
     &:link, &:visited {
       color: #54a8ff;
     }
-    &:visited {
-      color: #54a8ff;
-    }
   }
   .wrapper {
     display: flex;
@@ -236,8 +233,6 @@
   @media all and (max-width: 840px){
     .wrapper {
       width: 432px;
-      justify-content: space-around;
-      flex-flow: row-reverse wrap-reverse;
     }
     .posts {
       margin-top: 16px;
